@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Main Process",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceRoot}",
+      //"runtimeExecutable": "${workspaceRoot}/node_modules/.bin/electron", // default
+      //"runtimeExecutable": "${workspaceRoot}/node_modules/.bin/electron.cmd", // for windows
+      "runtimeExecutable": "C:\\node\\node_home\\electron.cmd", // for windows
+      "program": "${workspaceRoot}/main.js"
+    }
+  ]
+}

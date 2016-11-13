@@ -1,0 +1,13 @@
+extends ../layout/index
+
+block content
+  p
+    a(href='/') top
+  p
+    a(href='/test') test
+  .row
+    .columns.small-3.large-2.sticky-container(data-sticky-container='')
+      nav.columns.sticky.is-anchored.is-at-top(data-sticky='', data-anchor='tetest2')
+        include frame_left
+    .columns.small-9.large-10#tetest2
+      include frame_main

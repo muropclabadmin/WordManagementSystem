@@ -1,0 +1,38 @@
+{
+  "name": "word_controll_system",
+  "version": "0.1.0",
+  "description": "用語(単語など)を管理するシステム",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "",
+  "keywords": [
+    "Electron",
+    "用語",
+    "単語",
+    "管理",
+    "整理",
+    "記録",
+    "メモ",
+    "カテゴリ",
+    "分類",
+    "ジャンル",
+    "タグ",
+    "プロジェクト"
+  ],
+  "author": "snowman8765",
+  "devDependencies": {
+    "electron": "^1.4.6"
+  },
+  "dependencies": {
+    "nedb": "^1.8.0",
+    "body-parser": "~1.15.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.3.2",
+    "express": "~4.14.0",
+    "jade": "~1.11.0",
+    "morgan": "~1.7.0",
+    "serve-favicon": "~2.3.0"
+  }
+}

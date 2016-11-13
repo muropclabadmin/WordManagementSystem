@@ -1,0 +1,58 @@
+extends layout/index
+
+block content
+  h1= title
+  p Welcome to #{title}
+  a(href='/test') test
+  p メッセージ to #{msg}
+  a(href='/word') word
+  p get to #{wordList}
+  a(href='/word/word') word id
+  hr
+  div
+    h3 表示
+    form(action="/word", method="GET")
+      button 表示
+      p word: #{word}
+  hr
+  div
+    h3 追加
+    form(action="/word", method="POST")
+      span 用語
+      input(type="text", id="add_word", name="word", value="")
+      span ひらがな表記
+      input(type="text", id="add_hiragana", name="hiragana", value="")
+      span 英語表記
+      input(type="text", id="add_english", name="english", value="")
+      span 備考
+      input(type="text", id="add_memo", name="memo", value="")
+      span カテゴリID
+      input(type="text", id="add_category_id", name="category_id", value="0")
+      span タグID
+      input(type="text", id="add_tag_id", name="tag_id", value="0")
+      span 引用ID
+      input(type="text", id="add_innyou_id", name="innyou_id", value="0")
+      button(value="zz")  追加
+  hr
+  div
+    h3 更新
+    form(action="/word", method="POST")
+      span ID
+      input(type="text", id="update_id", name="_id", value="")
+      span 用語
+      input(type="text", id="update_word", name="word", value="")
+      span ひらがな表記
+      input(type="text", id="update_hiragana", name="hiragana", value="")
+      span 英語表記
+      input(type="text", id="update_english", name="english", value="")
+      span 備考
+      input(type="text", id="update_memo", name="memo", value="")
+      span カテゴリID
+      input(type="text", id="update_category_id", name="id_category", value="0")
+      span タグID
+      input(type="text", id="update_tag_id", name="id_tag", value="0")
+      span 引用ID
+      input(type="text", id="update_innyou_id", name="id_innyou", value="0")
+      button 更新
+      
+      
